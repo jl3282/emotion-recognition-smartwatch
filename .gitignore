@@ -1,0 +1,40 @@
+.DS_Store
+Emowear_data/
+emowear_7channel_wrist_focused/
+
+# Large model files
+*.pth
+*.pkl
+*.h5
+*.hdf5
+
+# Large data files  
+*.npy
+*.npz
+
+# Backup directory
+
+# Results and outputs
+dl_models_results_comparison/
+transfer_learning_results/
+ensemble_results/
+*.png
+*.jpg
+*.pdf
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# Environment
+.env
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
