@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# 🔑 What Fixed the Overfitting
+# What Fixed the Overfitting
 # Freezing Early Layers: Only trained final classifier (41K vs 476K parameters)
 # Higher Dropout: Increased from 0.3 to 0.5
 # Lower Learning Rate: 5e-5 instead of 1e-4
@@ -7,7 +7,7 @@
 # Label Smoothing: Added 0.1 smoothing
 # Combined Score Early Stopping: Penalized large validation-test gaps
 # Gradient Clipping: Prevented exploding gradients
-# 📊 Training Pattern Analysis
+# Training Pattern Analysis
 # The training showed perfect generalization from epoch 6 onwards:
 # Epochs 0-6: Learning phase with small gaps (0-2%)
 # Epochs 6-14: Stable performance with zero gap (47.2% both val and test)

@@ -37,7 +37,7 @@ class EmoWearWristFocusedMapper:
         # Load metadata
         self.load_metadata()
         
-        print("🎯 EmoWear → 7-Channel WRIST-FOCUSED Mapper")
+        print("EmoWear → 7-Channel WRIST-FOCUSED Mapper")
         print("="*60)
         print("User-specified channel mapping (NO SIMULATION):")
         for i, signal in enumerate(self.target_channels):
@@ -50,12 +50,12 @@ class EmoWearWristFocusedMapper:
         with open(f"{self.input_dir}/metadata.json", 'r') as f:
             self.metadata = json.load(f)
         
-        print(f"✓ Current data: {self.metadata['data_shape']}")
-        print(f"✓ Available signals: {self.metadata['core_signals']}")
+        print(f"Current data: {self.metadata['data_shape']}")
+        print(f"Available signals: {self.metadata['core_signals']}")
         
         # Create signal index mapping
         self.signal_indices = {signal: idx for idx, signal in enumerate(self.metadata['core_signals'])}
-        print(f"✓ Signal indices: {self.signal_indices}")
+        print(f"Signal indices: {self.signal_indices}")
         
         # Verify all target channels are available
         missing_signals = []
@@ -259,11 +259,11 @@ def main():
     analysis = mapper.analyze_conversion()
     
     print(f"\n{'='*60}")
-    print(f"🎉 WRIST-FOCUSED CONVERSION COMPLETE!")
+    print(f"WRIST-FOCUSED CONVERSION COMPLETE!")
     print(f"{'='*60}")
-    print(f"✅ 7 channels: 5 wrist + 2 chest sensors")
-    print(f"✅ All real sensor data (NO simulation)")
-    print(f"✅ Wrist-centric for transfer learning")
+    print(f"7 channels: 5 wrist + 2 chest sensors")
+    print(f"All real sensor data (NO simulation)")
+    print(f"Wrist-centric for transfer learning")
     
     # Show the final mapping
     print(f"\n📋 FINAL 7-CHANNEL WRIST-FOCUSED MAPPING:")

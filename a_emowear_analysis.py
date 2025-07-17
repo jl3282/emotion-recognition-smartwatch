@@ -288,17 +288,17 @@ def main():
     print("ANALYSIS SUMMARY & RECOMMENDATIONS")
     print("=" * 60)
     
-    print(f"\n📊 Dataset Overview:")
+    print(f"\nDataset Overview:")
     print(f"   • {len(analyzer.participants)} participants")
     print(f"   • {len(surveys_df)} emotion samples")
     print(f"   • {len(core_signals)} core signals with ≥80% availability")
     
-    print(f"\n🎯 Recommended Labeling Strategy:")
+    print(f"\nRecommended Labeling Strategy:")
     print(f"   • Strategy: {recommended_strategy.replace('-', ' ').title()}")
     print(f"   • Classes: 0=Sad/Negative, 1=Neutral, 2=Happy/Positive")
     print(f"   • Total samples: {len(recommended_labels)}")
     
-    print(f"\n📡 Core Signals for Modeling:")
+    print(f"\nCore Signals for Modeling:")
     for i, signal in enumerate(core_signals[:8], 1):  # Show top 8
         print(f"   {i}. {signal}")
     if len(core_signals) > 8:
@@ -317,7 +317,7 @@ def main():
     with open('emowear_analysis_results.json', 'w') as f:
         json.dump(results, f, indent=2)
     
-    print(f"\n💾 Analysis results saved to 'emowear_analysis_results.json'")
+    print(f"\nAnalysis results saved to 'emowear_analysis_results.json'")
     
     return analyzer, surveys_df, recommended_strategy, core_signals
 

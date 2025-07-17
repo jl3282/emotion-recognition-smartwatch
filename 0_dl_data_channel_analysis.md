@@ -1,13 +1,13 @@
 # Deep Learning Data Channel Analysis Summary
 
-## 🔍 **Data Structure Overview**
+## Data Structure Overview
 
 The deep learning data has the following structure:
 - **Shape**: `(n_windows, 24, 7)` 
 - **24 time steps**: 1-second windows at 24 Hz sampling rate
 - **7 channels**: Multi-sensor smartwatch data
 
-## 📊 **Channel Identification Results**
+## Channel Identification Results
 
 Based on statistical analysis of the data patterns, here's what each channel represents:
 
@@ -41,7 +41,7 @@ Based on statistical analysis of the data patterns, here's what each channel rep
   - Range: -268.66 to 307.51 °/s
   - Mean: -0.61 ± 107.68 °/s
 
-### **Channel 6: Heart Rate** ✅
+### **Channel 6: Heart Rate**
 - **Range**: 94.0 to 135.0 bpm
 - **Mean**: 126.43 ± 7.88 bpm
 - **100% values in heart rate range (40-200 bpm)**
